@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://co53b8nlaq5xy"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_clssm"]
+
+[node name="CanvasLayer" type="CanvasLayer" groups=["UI"]]
+script = ExtResource("1_clssm")
+
+[node name="UI" type="Control" parent="." groups=["UI"]]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="infoPanel" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="characterInfo" type="RichTextLabel" parent="infoPanel"]
+offset_right = 40.0
+offset_bottom = 40.0
+bbcode_enabled = true
+text = "Test"

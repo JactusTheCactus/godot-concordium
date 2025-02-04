@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc46c57ehykep"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_cdskk"]
+[ext_resource type="Texture2D" uid="uid://ddsc6pev7r787" path="res://assets/player.png" id="2_bbs0x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jtc0o"]
+size = Vector2(16, 32)
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_cdskk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_bbs0x")
+
+[node name="text" type="Control" parent="Sprite2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="dialogueBox" type="Panel" parent="Sprite2D/text"]
+modulate = Color(1, 1, 1, 0.498039)
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -115.0
+offset_right = 30.0
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="textBox" type="RichTextLabel" parent="Sprite2D/text/dialogueBox"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jtc0o")

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://to6ni2igbb1t"
+
+[deps]
+
+files=["res://data.animal.translation", "res://data.aspect.translation", "res://data.weapon.translation", "res://data.colour.translation", "res://data.power.translation", "res://data.species.translation", "res://data.sex.translation", "res://data.rank.translation", "res://data.alignment.translation", "res://data.epithet.translation", "res://data.description.translation", "res://data.edictDef.translation"]
+
+source_file="res://data.csv"
+dest_files=["res://data.animal.translation", "res://data.aspect.translation", "res://data.weapon.translation", "res://data.colour.translation", "res://data.power.translation", "res://data.species.translation", "res://data.sex.translation", "res://data.rank.translation", "res://data.alignment.translation", "res://data.epithet.translation", "res://data.description.translation", "res://data.edictDef.translation"]
+
+[params]
+
+compress=true
+delimiter=0

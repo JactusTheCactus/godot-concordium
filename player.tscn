@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bc46c57ehykep"]
+[gd_scene load_steps=5 format=3 uid="uid://bc46c57ehykep"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_cdskk"]
 [ext_resource type="Texture2D" uid="uid://ddsc6pev7r787" path="res://assets/player.png" id="2_bbs0x"]
+[ext_resource type="Script" path="res://abugidaFont.gd" id="3_wqxir"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jtc0o"]
 size = Vector2(16, 32)
@@ -43,6 +44,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 bbcode_enabled = true
+script = ExtResource("3_wqxir")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_jtc0o")

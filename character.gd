@@ -1,11 +1,12 @@
 extends Area2D
 
 @export var character_name: String
-@export var abugida_name: String
-@export var description: String
-@export var armor_color: String
-@export var animal: String
 @export var aspect: String
+@export var abugida_name: String
+@export var abugida_aspect: String
+@export var description: String
+@export var colour: String
+@export var animal: String
 @export var weapon: String
 @export var power: String
 @export var species: String
@@ -13,7 +14,11 @@ extends Area2D
 @export var rank: String
 @export var epithet: String
 @export var edictDef: String
-#@export var : String
+
+@onready var abugida: Dictionary = {
+	"name": abugida_name,
+	"aspect": abugida_aspect
+}
 
 @onready var textBox = get_node('/root/main/player/Sprite2D/text/dialogueBox/textBox')
 
@@ -96,7 +101,7 @@ func _ready():
 	var player = get_node("/root/main/player")  # Change this to the correct path where your player is
 	player.connect("player_interact", _on_player_interact)
 	# Do something like showing the text box here
-	$bodySprite.modulate = getColour(armor_color)  # Apply color dynamically
+	$bodySprite.modulate = getColour(colour)  # Apply color dynamically
 	set_child_texture(alignment,aspect)
 	# Connect signals for the character's Area2D
 	connect("body_entered", _on_body_entered)
@@ -126,8 +131,8 @@ func _process(delta):
 	if ui.visible and Input.is_action_just_pressed("ui_cancel"):  # Press Esc or a Cancel key
 		ui.visible = false
 
-func textFormatting(text,prefix='',suffix=''):
-	return prefix + text + suffix
+func textFormatting(input,prefix='',suffix=''):
+	return prefix + input + suffix
 
 func getRole(input_string: String) -> String:
 	var lookup_dict := {
@@ -154,23 +159,40 @@ func getTeam(input_string: String) -> String:
 		return lookup_dict.get(first_letter, "Unknown") # Default to "Unknown" if the letter isn't in the dictionary
 	return "Invalid Input"
 
-func show_character_info():
+func formatAbugida(text: String) -> String:
+	var characterList : Dictionary = {
+		"a_":"á",
+		"e_":"é",
+		"o_":"ó",
+		"u_":"ú",
+		"d_":"ð",
+		"n_":"ŋ",
+		"s_":"ś",
+		"t_":"þ",
+		"z_":"ź"
+	}
+	for i in characterList:
+		text = text.replace(i,characterList[i])
+	return text
 	
+func show_character_info():
 	ui.visible = true  # Show the dialogue box
-
-	# Format the character's info using BBCode
-	var formatted_text = "%s %s" % [character_name,rank]
-	if abugida_name != "":
-		formatted_text += "\n[i]%s[/i]" % [abugida_name]
+	for i in abugida:
+		abugida[i] = formatAbugida(abugida[i])
+	var formatted_text = "%s %s" % [character_name, rank]
+	if abugida["name"] != "":
+		for i in abugida:
+			formatted_text += "\n[code]/%s.[/code]" % [abugida[i]]
 	if epithet != "":
 		formatted_text += "\n\"%s\"" % [epithet]
-	formatted_text += "\nThe %s of The Seven %s %ss\n" % [getRole(rank),getTeam(alignment),alignment]
-	formatted_text += "\nThe %s %s of %s" % [animal,alignment,aspect]
+	formatted_text += "\nThe %s of The Seven %s %ss\n" % [getRole(rank), getTeam(alignment), alignment]
+	formatted_text += "\nThe %s %s of %s" % [animal, alignment, aspect]
 	if edictDef != "":
 		formatted_text += "\n%s" % [edictDef]
 	formatted_text += "\nWeapon: %s" % [weapon]
 	formatted_text += "\nPower: %s" % [power]
 	formatted_text += "\nSpecies: %s" % [species]
 	formatted_text += "\n%s" % [description]
-	
-	text_box.bbcode_text = textFormatting(formatted_text,'[font_size=40]')  # Set the text in the TextBox
+
+	text_box.bbcode_text = textFormatting(formatted_text)
+	text_box.queue_redraw()  # Force the RichTextLabel to update

@@ -32,11 +32,12 @@ func spawn_character(spawn_position: Vector2, data: Dictionary):
 	var character_instance = character_scene.instantiate()
 	character_instance.position = spawn_position  # Use the renamed parameter
 	character_instance.character_name = data["name"]
-	character_instance.abugida_name = data["abugida_name"]
-	character_instance.description = data["description"]
-	character_instance.armor_color = data["armor_color"]
-	character_instance.animal = data["animal"]
 	character_instance.aspect = data["aspect"]
+	character_instance.abugida_name = data["abugida_name"]
+	character_instance.abugida_aspect = data["abugida_aspect"]
+	character_instance.description = data["description"]
+	character_instance.colour = data["colour"]
+	character_instance.animal = data["animal"]
 	character_instance.weapon = data["weapon"]
 	character_instance.power = data["power"]
 	character_instance.species = data["species"]

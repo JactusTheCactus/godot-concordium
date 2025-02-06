@@ -7,5 +7,5 @@ func _ready():
 	info_panel.visible = false
 
 func display_info(characterName, abugida_name):
-	character_info.text = "[center][b]%s[/b]\n[font=res://fonts/abugida_font.tres]%s[/font][/center]" % [characterName,abugida_name]
+	character_info.text = "[center][b]%s[/b]\n%s[/center]" % [characterName,abugida_name]
 	info_panel.visible = true

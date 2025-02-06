@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b86auqreaishh"]
+[gd_scene load_steps=8 format=3 uid="uid://b86auqreaishh"]
 
 [ext_resource type="PackedScene" uid="uid://co53b8nlaq5xy" path="res://ui.tscn" id="1_wm4mv"]
 [ext_resource type="Script" path="res://world.gd" id="2_5sghi"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bc46c57ehykep" path="res://player.tscn" id="4_kthce"]
 [ext_resource type="Script" path="res://uisize.gd" id="5_efc75"]
 [ext_resource type="FontFile" uid="uid://iv2u10wik2x3" path="res://assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf" id="6_4yckb"]
+[ext_resource type="FontFile" uid="uid://4way435w5arq" path="res://assets/fonts/Abugida/abugida/abugida.ttf" id="7_5fidq"]
 
 [node name="main" type="Node2D"]
 
@@ -31,7 +32,6 @@ grow_vertical = 2
 script = ExtResource("5_efc75")
 
 [node name="dialogueBox" type="Panel" parent="UI"]
-modulate = Color(1, 1, 1, 0.498039)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -47,7 +47,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/line_separation = 10
 theme_override_fonts/normal_font = ExtResource("6_4yckb")
+theme_override_fonts/mono_font = ExtResource("7_5fidq")
+theme_override_font_sizes/mono_font_size = 40
+theme_override_font_sizes/normal_font_size = 50
 bbcode_enabled = true
 
 [node name="character" parent="." instance=ExtResource("3_d50y6")]

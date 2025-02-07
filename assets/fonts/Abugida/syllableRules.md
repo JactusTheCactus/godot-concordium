@@ -20,7 +20,7 @@
 |<ab>xi|<ab>xá|<ab>.|<ab>xaxú|<ab>.|<ab>c|<ab>.|<ab>kt|
 |<ab>xo|<ab>xé|<ab>.|<ab>xóxé|<ab>.|<ab>d|<ab>.|<ab>ps|
 |<ab>.|<ab>xó|<ab>.|<ab>.|<ab>.|<ab>ð|<ab>.|<ab>pt|
-|<ab>.|<ab>xu|<ab>.|<ab>.|<ab>.|<ab>f|<ab>.|<ab>rd|
+|<ab>.|<ab>xu|<ab>.|<ab>.|<ab>.|<ab>f|<ab>.|<ab>.|
 |<ab>.|<ab>xú|<ab>.|<ab>.|<ab>.|<ab>g|<ab>.|<ab>.|
 |<ab>.|<ab>.|<ab>.|<ab>.|<ab>.|<ab>j|<ab>.|<ab>.|
 |<ab>.|<ab>.|<ab>.|<ab>.|<ab>.|<ab>k|<ab>.|<ab>.|

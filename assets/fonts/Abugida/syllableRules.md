@@ -16,7 +16,7 @@
 |<h2>Vowels</h2>||||<h2>Consonants</h2>||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |<h3>Initial</h3>|<h3>Either</h3>|<h3>Final</h3>|<h3>Diphthongs</h3>|<h3>Initial</h3>|<h3>Either</h3>|<h3>Final</h3>|Clusters|
-|<ab>xe|<ab>xa|<ab>.|<ab>xaxé|<ab>h|<ab>b|<ab>ŋ|<ab>.|
+|<ab>xe|<ab>xa|<ab>.|<ab>xaxé|<ab>h|<ab>b|<ab>ŋ|<ab>fk|
 |<ab>xi|<ab>xá|<ab>.|<ab>xaxú|<ab>.|<ab>c|<ab>.|<ab>.|
 |<ab>xo|<ab>xé|<ab>.|<ab>xóxé|<ab>.|<ab>d|<ab>.|<ab>.|
 |<ab>.|<ab>xó|<ab>.|<ab>.|<ab>.|<ab>ð|<ab>.|<ab>.|

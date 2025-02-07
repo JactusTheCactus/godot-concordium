@@ -17,8 +17,8 @@
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |<h3>Initial</h3>|<h3>Either</h3>|<h3>Final</h3>|<h3>Diphthongs</h3>|<h3>Initial</h3>|<h3>Either</h3>|<h3>Final</h3>|
 |<ab>xe|<ab>xa|<ab>.|<ab>xaxé|<ab>h|<ab>b|<ab>ŋ|
-|<ab>xi|<ab>xá|<ab>.|<ab>xóxé|<ab>.|<ab>c|<ab>.|
-|<ab>xo|<ab>xé|<ab>.|<ab>|<ab>.|<ab>d|<ab>.|
+|<ab>xi|<ab>xá|<ab>.|<ab>xaxú|<ab>.|<ab>c|<ab>.|
+|<ab>xo|<ab>xé|<ab>.|<ab>xóxé|<ab>.|<ab>d|<ab>.|
 |<ab>.|<ab>xó|<ab>.|<ab>|<ab>.|<ab>ð|<ab>.|
 |<ab>.|<ab>xu|<ab>.|<ab>|<ab>.|<ab>f|<ab>.|
 |<ab>.|<ab>xú|<ab>.|<ab>|<ab>.|<ab>g|<ab>.|

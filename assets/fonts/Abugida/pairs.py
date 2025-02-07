@@ -117,7 +117,7 @@ def genWords(syl):
             syllableList.append(c + v)
     total_words = len(syllableList) ** syl  # Calculate total words
     with open('assets/fonts/Abugida/output.txt','w',encoding='utf-8') as f:
-        with tqdm(total=total_words, desc="Processing", unit="word", ascii="|█", bar_format="{l_bar}{bar} {n_fmt} {unit}s [{remaining}, {rate_fmt}]") as pbar:
+        with tqdm(total=total_words, desc="Processing", unit="word", ascii="-=", bar_format="{l_bar}{bar} {n_fmt} {unit}s [{remaining}, {rate_fmt}]") as pbar:
             for word in product(syllableList, repeat=syl):
                 newWord = f'{''.join(word).upper()}'
                 if newWord != f'{''.join('źwú').upper()}':

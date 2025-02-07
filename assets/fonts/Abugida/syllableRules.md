@@ -1,16 +1,4 @@
-<style>
-    h1, h2, h3 {
-        font-family: verdana
-    }
-    @font-face {
-    font-family: "Abugida";
-    src: url("D:/Downoads/ProgrammingProjects/godotProjects/concordium/assets/fonts/Abugida/abugida/abugida.ttf") format("truetype");
-    }
-    ab {
-        font-family: "Abugida";
-    }
-
-</style>
+<style>h1,h2,h3{font-family:verdana}@font-face{font-family:"Abugida";src:url("D:/Downoads/ProgrammingProjects/godotProjects/concordium/assets/fonts/Abugida/abugida/abugida.ttf")format("truetype");}ab{font-family:"Abugida";}</style>
 <h1>Abugida Syllable Rules</h1>
 
 |<h2>Vowels|<h2>|<h2>|<h2>|<h1>\||<h2>Consonants|<h2>|<h2>|<h2>|

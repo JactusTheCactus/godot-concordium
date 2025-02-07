@@ -115,21 +115,27 @@ def genWords(syl):
     for c in consonantPairList:
         for v in vowelPairList:
             syllableList.append(c + v)
-    total_words = len(syllableList) ** syl  # Calculate total words
+    total_words = 0
+    for i in range(syl):
+        total_words += len(syllableList) ** (syl - (i))
     with open('assets/fonts/Abugida/output.txt','w',encoding='utf-8') as f:
         with tqdm(total=total_words, desc="Processing", unit="word", ascii="-=", bar_format="{l_bar}{bar} {n_fmt} {unit}s [{remaining}, {rate_fmt}]") as pbar:
-            for word in product(syllableList, repeat=syl):
-                newWord = f'{''.join(word).upper()}'
-                if newWord != f'{''.join('źwú').upper()}':
-                    newWord += '\n'
-                f.write(newWord)
-                pbar.update(1)
+            for i in range(syl+1):
+                if i > 0:
+                    for word in product(syllableList, repeat=i):
+                        if ''.join(word).upper() != 'BA':
+                            newWord = '\n'
+                        else:
+                            newWord = ''
+                        newWord += f'{''.join(word).upper()}'
+                        f.write(newWord)
+                        pbar.update(1)
     print(f'''
 Number of Possible Syllables: {syllableList.__len__():,}
 Length of Words: {syl} Syllables
-Number of Words: {syllableList.__len__() ** syl:,}''')
+Number of Words: {total_words:,}''')
 
-genWords(1)
+genWords(2)
 
 with open('assets/fonts/Abugida/markdown.md', 'w', encoding='utf-8') as f:
     f.write(markdown)

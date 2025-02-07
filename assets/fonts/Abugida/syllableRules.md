@@ -13,7 +13,7 @@
 </style>
 <h1>Abugida Syllable Rules</h1>
 
-|<h2>Vowels</h2>||||<h2>Consonants</h2>|||
+|<h2>Vowels</h2>|||<h2>Consonants</h2>||||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |<h3>Initial</h3>|<h3>Either</h3>|<h3>Final</h3>|<h3>Initial</h3>|<h3>Either</h3>|<h3>Final</h3>|
 |<ab>xe|<ab>xa|<ab>.||<ab>h|<ab>b|<ab>ŋ|

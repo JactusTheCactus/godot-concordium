@@ -29,10 +29,10 @@
 |<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>n|<ab>.|<ab>.|
 |<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>p|<ab>.|<ab>.|
 |<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>r|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>s|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>ś|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>t|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>þ|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>v|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>z|<ab>.|<ab>.|
-|<ab>.|<ab>.|<ab>.|<ab>.||<ab>.|<ab>ź|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|=|<ab>.|<ab>s|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|=|<ab>.|<ab>ś|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|=|<ab>.|<ab>t|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|=|<ab>.|<ab>þ|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|=|<ab>.|<ab>v|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|=|<ab>.|<ab>z|<ab>.|<ab>.|
+|<ab>.|<ab>.|<ab>.|<ab>.|<s>=|<ab>.|<ab>ź|<ab>.|<ab>.|

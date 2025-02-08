@@ -109,7 +109,7 @@ body {
     font-size: 3rem;
 }
 </style>
-<h1>Abugida Words, Sorted by Initial Consonant</h1>''')
+<h1>Abugida Words, Sorted By The Initial Consonant</h1>''')
 for index, consonant in enumerate(phonemes['consonants']):
     if consonant == 'x': fileName = 'vowels'
     else: fileName = consonant.upper() + consonant

@@ -148,5 +148,6 @@ normal {
             f.write(f'\n<h1>{fileName.capitalize()}</h1>')
             for word in words:
                 num = f'{(words.index(word) + 1):,}'
+                word = word.replace('X','')
                 f.write(f'\n<p><normal>{word.upper()}:</normal>{word.lower()}</p>')
         home.write(f"\n<li><a href='{address}{fileName}.html'>{fileName.capitalize()}</a></li>")

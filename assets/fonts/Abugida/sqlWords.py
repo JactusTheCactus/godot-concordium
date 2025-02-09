@@ -114,7 +114,7 @@ for index, consonant in enumerate(phonemes['consonants']):
     if consonant == 'x': fileName = 'vowels'
     else: fileName = consonant
     address = 'initialPhonemes/'
-    file = f"sort/{address}{fileName.capitalize()}.html"
+    file = f"sort/{address}{fileName.lower()}.html"
     with open('sort/index.html','a',encoding='utf-8') as home:
         with open(file, 'w', encoding='utf-8') as f:
             f.write('''<style>
@@ -148,7 +148,9 @@ b {
 </style>
 <a href='../index.html'><h3><--Back</h3></a>''')
             words = search_by_cluster(consonant.capitalize())  # Fetch words once per consonant
-            f.write(f'\n<h1>{fileName.upper()}{fileName.lower()}</h1>')
+            if fileName == 'vowels': header = fileName.capitalize()
+            else: header = f'{fileName}{fileName} <b>{fileName.lower()}</b>'.capitalize()
+            f.write(f'\n<h1>{header}</h1>')
             for word in words:
                 num = f'{(words.index(word) + 1):,}'
                 latinWord = word.replace('X','')

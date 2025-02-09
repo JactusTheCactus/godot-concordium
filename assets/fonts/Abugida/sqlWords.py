@@ -151,7 +151,7 @@ b {
             f.write(f'\n<h1>{fileName.capitalize()}</h1>')
             for word in words:
                 num = f'{(words.index(word) + 1):,}'
-                latinWord = word.replace('X','').upper()
-                abugidaWord = word.lower()
-                f.write(f'\n<p>{latinWord} <b>.{abugidaWord}</b></p>')
+                latinWord = word.replace('X','')
+                abugidaWord = word
+                f.write(f'\n<p>{latinWord.capitalize()} <b>.{abugidaWord.lower()}</b></p>')
         home.write(f"\n<li><a href='{address}{fileName}.html'>{fileName.capitalize()}</a></li>")

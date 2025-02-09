@@ -153,5 +153,5 @@ b {
                 num = f'{(words.index(word) + 1):,}'
                 latinWord = word.replace('X','').upper()
                 abugidaWord = word.lower()
-                f.write(f'\n<p>{latinWord}<b>.{abugidaWord}</b></p>')
+                f.write(f'\n<p>{latinWord} <b>.{abugidaWord}</b></p>')
         home.write(f"\n<li><a href='{address}{fileName}.html'>{fileName.capitalize()}</a></li>")

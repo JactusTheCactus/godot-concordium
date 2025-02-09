@@ -114,7 +114,7 @@ for index, consonant in enumerate(phonemes['consonants']):
     if consonant == 'x': fileName = 'vowels'
     else: fileName = consonant.upper() + consonant
     address = 'initialPhonemes/'
-    file = f"sort/{address}{fileName}.html"
+    file = f"sort/{address}{fileName.capitalize()}.html"
     with open('sort/index.html','a',encoding='utf-8') as home:
         with open(file, 'w', encoding='utf-8') as f:
             f.write('''<style>

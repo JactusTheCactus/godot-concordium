@@ -134,7 +134,7 @@ p {
 }
 b {
     font-family: Abugida;
-    font-size: 0.75em;
+    font-size: 0.5em;
 }
 @font-face {
     font-family: Abugida;

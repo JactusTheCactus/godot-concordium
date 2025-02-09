@@ -119,7 +119,7 @@ for index, consonant in enumerate(phonemes['consonants']):
         with open(file, 'w', encoding='utf-8') as f:
             f.write('''<style>
 body {
-    font-family: Abugida;
+    font-family: Verdana;
     padding: 5rem;
     font-size: 5rem;
 }
@@ -129,9 +129,11 @@ h1, h2, h3 {
 h3 {
     font-size: 0.5em;
 }
-normal {
-    font-family: Verdana;
+p {
     font-size: 2em;
+}
+b {
+    font-family: Abugida;
 }
 @font-face {
     font-family: Abugida;
@@ -148,7 +150,7 @@ normal {
             f.write(f'\n<h1>{fileName.capitalize()}</h1>')
             for word in words:
                 num = f'{(words.index(word) + 1):,}'
-                BigWord = word.replace('X','').upper()
-                SmallWord = word.lower()
-                f.write(f'\n<p><normal>{BigWord}:</normal>{SmallWord}</p>')
+                latinWord = word.replace('X','').upper()
+                abugidaWord = word.lower()
+                f.write(f'\n<p>{latinWord}:<b>{abugidaWord}</b></p>')
         home.write(f"\n<li><a href='{address}{fileName}.html'>{fileName.capitalize()}</a></li>")

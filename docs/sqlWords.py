@@ -23,7 +23,7 @@ phonemes = {
 }
 
 # SQLite database path
-DB_PATH = 'assets/fonts/Abugida/output.db'
+DB_PATH = 'sqlite/output.db'
 
 def setup_database():
     """Creates SQLite database and words table with a 'cluster' column."""
@@ -101,7 +101,7 @@ setup_database()
 generate_words()
 
 totalWords = len(phonemes['consonants'])
-with open('sort/index.html','w',encoding='utf-8') as home:
+with open('docs/index.html','w',encoding='utf-8') as home:
     home.write('''<style>
 body {
     font-family: Verdana;
@@ -114,8 +114,8 @@ for index, consonant in enumerate(phonemes['consonants']):
     if consonant == 'x': fileName = 'vowels'
     else: fileName = consonant
     address = 'initialPhonemes/'
-    file = f"sort/{address}{fileName.lower()}.html"
-    with open('sort/index.html','a',encoding='utf-8') as home:
+    file = f"docs/{address}{fileName.lower()}.html"
+    with open('docs/index.html','a',encoding='utf-8') as home:
         with open(file, 'w', encoding='utf-8') as f:
             f.write('''<style>
 body {

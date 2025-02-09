@@ -112,7 +112,7 @@ body {
 <h1>Abugida Words, Sorted By The Initial Consonant</h1>''')
 for index, consonant in enumerate(phonemes['consonants']):
     if consonant == 'x': fileName = 'vowels'
-    else: fileName = consonant.upper() + consonant
+    else: fileName = consonant
     address = 'initialPhonemes/'
     file = f"sort/{address}{fileName.capitalize()}.html"
     with open('sort/index.html','a',encoding='utf-8') as home:
@@ -148,7 +148,7 @@ b {
 </style>
 <a href='../index.html'><h3><--Back</h3></a>''')
             words = search_by_cluster(consonant.capitalize())  # Fetch words once per consonant
-            f.write(f'\n<h1>{fileName.capitalize()}</h1>')
+            f.write(f'\n<h1>{fileName.upper()}{fileName.lower()}</h1>')
             for word in words:
                 num = f'{(words.index(word) + 1):,}'
                 latinWord = word.replace('X','')
